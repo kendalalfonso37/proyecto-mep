@@ -11,3 +11,11 @@
 # para poder estudiar si este fenomeno cumple las 
 # condiciones de un proceso de markov con renovacion
 
+
+#Inicio
+
+n <- 10 #Numero de elementos para la distribucion de poisson
+lamb <- 1.5 #Tasa de cambios de cajas por unidad de tiempo
+
+r<-dpois(n, lamb)
+r
