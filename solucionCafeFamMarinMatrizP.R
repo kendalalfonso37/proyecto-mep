@@ -30,6 +30,11 @@ P <- matrix(c(0.35, 0.30, 0.20, 0.15,
               0, 0.65, 0.25, 0.10,
               0, 0, 0.85, 0.15), nrow = 4, ncol = 4, byrow = TRUE)
 
+# Mostrar la matriz de transicion en el tiempo t=0
+print("La matriz siguiente representa una cadena de markov de una cola de botes de cafe para la familia Marin")
+print("Matriz de probabilidades de la compra de cafe de la familia Marin:")
+print(P)
+
 # El tiempo de transicion que haremos es a los 4 dias, que es el momento en que 
 # comienza la renovacion, por lo tanto a los 4 dias tendremos un "Reabastecimiento"
 # de cafe en la casa de la familia Marin: Realizaremos una transicion a los 4 pasos:
@@ -40,7 +45,8 @@ P3 <- P2 %*% P
 P4 <- P3 %*% P
 
 # Muestra de los resultados a los primeros 4 dias:
-P4
+print("Matriz de probabilidades de la compra de cafe de la familia marin a los 4 dias: ")
+print(P4)
 
 # Primera renovacion de cafe:
 P5 <- P4 %*% P
@@ -48,7 +54,8 @@ P6 <- P5 %*% P
 P7 <- P6 %*% P
 
 # Muestra de las probabilidades de que haya cafe a los 7 dias en casa de la familia marin:
-P7
+print("Matriz de probabilidades de la compra de cafe de la familia Marin a los 7 dias: ")
+print(P7)
 
 # La solucion es aparentemente sencilla puesto que hemos tratado el enunciado por medio 
 # de cadenas de markov, en lugar del proceso engorroso de calcular funciones de densidad
