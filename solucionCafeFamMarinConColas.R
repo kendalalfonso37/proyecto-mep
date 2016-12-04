@@ -13,8 +13,8 @@
 # 
 
 print("Tratamiento del proceso de renovacion de la compra de botes de la familia marin utilizando teoria de colas con notacion M/M/1:")
-lamb <- 3/4 # Cafe/dias
-miu <- 26/1 # Cafe/dias
+lamb <- 1/2 # Cafe/dias
+miu <- 3/4 # Cafe/dias
 
 rho <- lamb/miu
 
@@ -96,3 +96,4 @@ print("Probabilidad de que exactamente n botes se encuentren en el sistema; pn:"
 pn
 
 print("Datos validos para el sistema de colas de compra de tasas de cafe en la casa de la familia Marin; Si desea ajustar el programa puede realizarlo segun le convenga mejor con los datos de miu y lambda, Este programa tambien es aplicable a todos los problemas de colas con un comportamiento de M/M/1.")
+
